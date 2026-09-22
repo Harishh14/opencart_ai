@@ -1,0 +1,246 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: web\end-to-end-shopping-flow.spec.ts >> End-to-end shopping flow @master @sanity @regression @e2e @web
+- Location: tests\web\end-to-end-shopping-flow.spec.ts:6:5
+
+# Error details
+
+```
+Error: expect(received).toBeTruthy()
+
+Received: false
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=f7e1]:
+  - navigation [ref=f7e2]:
+    - generic [ref=f7e3]:
+      - button "$ Currency " [ref=f7e7] [cursor=pointer]:
+        - strong [ref=f7e8]: $
+        - text: Currency
+        - generic [ref=f7e9]: 
+      - list [ref=f7e11]:
+        - listitem [ref=f7e12]:
+          - link "" [ref=f7e13] [cursor=pointer]:
+            - /url: https://tutorialsninja.com/demo/index.php?route=information/contact
+          - text: "123456789"
+        - listitem [ref=f7e15]:
+          - link " My Account" [ref=f7e16] [cursor=pointer]:
+            - /url: https://tutorialsninja.com/demo/index.php?route=account/account
+            - generic [ref=f7e17]: 
+            - text: My Account
+        - listitem [ref=f7e19]:
+          - link " Wish List (0)" [ref=f7e20] [cursor=pointer]:
+            - /url: https://tutorialsninja.com/demo/index.php?route=account/wishlist
+            - generic [ref=f7e21]: 
+            - text: Wish List (0)
+        - listitem [ref=f7e22]:
+          - link " Shopping Cart" [ref=f7e23] [cursor=pointer]:
+            - /url: https://tutorialsninja.com/demo/index.php?route=checkout/cart
+            - generic [ref=f7e24]: 
+            - text: Shopping Cart
+        - listitem [ref=f7e25]:
+          - link " Checkout" [ref=f7e26] [cursor=pointer]:
+            - /url: https://tutorialsninja.com/demo/index.php?route=checkout/checkout
+            - generic [ref=f7e27]: 
+            - text: Checkout
+  - banner [ref=f7e28]:
+    - generic [ref=f7e30]:
+      - heading [level=1] [ref=f7e33]:
+        - link "Qafox.com" [ref=f7e34] [cursor=pointer]:
+          - /url: https://tutorialsninja.com/demo/index.php?route=common/home
+      - generic [ref=f7e36]:
+        - textbox "Search" [ref=f7e37]: MacBook
+        - button "" [ref=f7e39] [cursor=pointer]
+      - button " 0 item(s) - $0.00" [ref=f7e43] [cursor=pointer]:
+        - generic [ref=f7e44]: 
+        - text: 0 item(s) - $0.00
+  - navigation [ref=f7e46]:
+    - generic: 
+    - list [ref=f7e48]:
+      - listitem [ref=f7e49]:
+        - link "Desktops" [ref=f7e50] [cursor=pointer]:
+          - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=20
+      - listitem [ref=f7e51]:
+        - link "Laptops & Notebooks" [ref=f7e52] [cursor=pointer]:
+          - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=18
+      - listitem [ref=f7e53]:
+        - link "Components" [ref=f7e54] [cursor=pointer]:
+          - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=25
+      - listitem [ref=f7e55]:
+        - link "Tablets" [ref=f7e56] [cursor=pointer]:
+          - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=57
+      - listitem [ref=f7e57]:
+        - link "Software" [ref=f7e58] [cursor=pointer]:
+          - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=17
+      - listitem [ref=f7e59]:
+        - link "Phones & PDAs" [ref=f7e60] [cursor=pointer]:
+          - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=24
+      - listitem [ref=f7e61]:
+        - link "Cameras" [ref=f7e62] [cursor=pointer]:
+          - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=33
+      - listitem [ref=f7e63]:
+        - link "MP3 Players" [ref=f7e64] [cursor=pointer]:
+          - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=34
+  - generic [ref=f7e65]:
+    - list [ref=f7e66]:
+      - listitem [ref=f7e67]:
+        - link "" [ref=f7e68] [cursor=pointer]:
+          - /url: https://tutorialsninja.com/demo/index.php?route=common/home
+      - listitem [ref=f7e70]:
+        - link "Search" [ref=f7e71] [cursor=pointer]:
+          - /url: https://tutorialsninja.com/demo/index.php?route=product/search&search=MacBook
+      - listitem [ref=f7e72]:
+        - link "MacBook" [ref=f7e73] [cursor=pointer]:
+          - /url: https://tutorialsninja.com/demo/index.php?route=product/product&search=MacBook&product_id=43
+    - generic [ref=f7e76]:
+      - generic [ref=f7e77]:
+        - list [ref=f7e78]:
+          - listitem [ref=f7e79]:
+            - link [ref=f7e80] [cursor=pointer]:
+              - /url: https://tutorialsninja.com/demo/image/cache/catalog/demo/macbook_1-500x500.jpg
+              - img "MacBook" [ref=f7e81]
+          - listitem [ref=f7e82]:
+            - link [ref=f7e83] [cursor=pointer]:
+              - /url: https://tutorialsninja.com/demo/image/cache/catalog/demo/macbook_5-500x500.jpg
+              - img "MacBook" [ref=f7e84]
+          - listitem [ref=f7e85]:
+            - link [ref=f7e86] [cursor=pointer]:
+              - /url: https://tutorialsninja.com/demo/image/cache/catalog/demo/macbook_4-500x500.jpg
+              - img "MacBook" [ref=f7e87]
+          - listitem [ref=f7e88]:
+            - link [ref=f7e89] [cursor=pointer]:
+              - /url: https://tutorialsninja.com/demo/image/cache/catalog/demo/macbook_2-500x500.jpg
+              - img "MacBook" [ref=f7e90]
+          - listitem [ref=f7e91]:
+            - link [ref=f7e92] [cursor=pointer]:
+              - /url: https://tutorialsninja.com/demo/image/cache/catalog/demo/macbook_3-500x500.jpg
+              - img "MacBook" [ref=f7e93]
+        - list [ref=f7e94]:
+          - listitem [ref=f7e95]:
+            - link "Description" [ref=f7e96]:
+              - /url: "#tab-description"
+          - listitem [ref=f7e97]:
+            - link "Specification" [ref=f7e98] [cursor=pointer]:
+              - /url: "#tab-specification"
+          - listitem [ref=f7e99]:
+            - link "Reviews (0)" [ref=f7e100] [cursor=pointer]:
+              - /url: "#tab-review"
+        - generic [ref=f7e101]:
+          - generic [ref=f7e103]:
+            - paragraph [ref=f7e104]: Intel Core 2 Duo processor
+            - paragraph [ref=f7e105]: Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, the new MacBook is the fastest ever.
+            - paragraph [ref=f7e106]: 1GB memory, larger hard drives
+            - paragraph [ref=f7e107]: The new MacBook now comes with 1GB of memory standard and larger hard drives for the entire line perfect for running more of your favorite applications and storing growing media collections.
+            - paragraph [ref=f7e108]: Sleek, 1.08-inch-thin design
+            - paragraph [ref=f7e109]: MacBook makes it easy to hit the road thanks to its tough polycarbonate case, built-in wireless technologies, and innovative MagSafe Power Adapter that releases automatically if someone accidentally trips on the cord.
+            - paragraph [ref=f7e110]: Built-in iSight camera
+            - paragraph [ref=f7e111]: Right out of the box, you can have a video chat with friends or family,2 record a video at your desk, or take fun pictures with Photo Booth
+          - text: "* * *"
+      - generic [ref=f7e112]:
+        - generic [ref=f7e113]:
+          - button "" [ref=f7e114] [cursor=pointer]
+          - button "" [ref=f7e116] [cursor=pointer]
+        - heading "MacBook" [level=1] [ref=f7e118]
+        - list [ref=f7e119]:
+          - listitem [ref=f7e120]:
+            - text: "Brand:"
+            - link "Apple" [ref=f7e121] [cursor=pointer]:
+              - /url: https://tutorialsninja.com/demo/index.php?route=product/manufacturer/info&manufacturer_id=8
+          - listitem [ref=f7e122]: Product Code:Product 16
+          - listitem [ref=f7e123]: Reward Points:600
+          - listitem [ref=f7e124]: Availability:Out Of Stock
+        - list [ref=f7e125]:
+          - listitem [ref=f7e126]:
+            - heading "$602.00" [level=2] [ref=f7e127]
+          - listitem [ref=f7e128]: Ex Tax:$500.00
+        - generic [ref=f7e130]:
+          - generic [ref=f7e131]: Qty
+          - textbox "Qty" [ref=f7e132]: "1"
+          - button "Add to Cart" [ref=f7e133] [cursor=pointer]
+        - generic [ref=f7e134]:
+          - paragraph [ref=f7e135]:
+            - generic [ref=f7e136]: 
+            - generic [ref=f7e138]: 
+            - generic [ref=f7e140]: 
+            - generic [ref=f7e142]: 
+            - generic [ref=f7e144]: 
+            - link "0 reviews" [ref=f7e146] [cursor=pointer]:
+              - /url: ""
+            - text: /
+            - link "Write a review" [ref=f7e147] [cursor=pointer]:
+              - /url: ""
+          - separator [ref=f7e148]
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '../../fixtures/pageFixtures';
+  2  | import { CustomerData } from '../../pages/RegisterPage';
+  3  | import { RandomDataUtil } from '../../utils/dataGenerator';
+  4  | import { Helper } from '../../utils/helper';
+  5  | 
+  6  | test('End-to-end shopping flow @master @sanity @regression @e2e @web', async ({
+  7  |     homePage,
+  8  |     registerPage,
+  9  |     loginPage,
+  10 |     accountPage,
+  11 |     productPage,
+  12 |     cartPage,
+  13 | }) => {
+  14 |     const product = Helper.getProductDetails();
+  15 |     const customer: CustomerData = {
+  16 |         firstName: RandomDataUtil.getFirstName(),
+  17 |         lastName: RandomDataUtil.getLastName(),
+  18 |         email: `opencart-${Date.now()}-${RandomDataUtil.getEmail()}`,
+  19 |         telephone: RandomDataUtil.getPhoneNumber(),
+  20 |         password: RandomDataUtil.getPassword(12),
+  21 |     };
+  22 | 
+  23 |     await test.step('1) Register a unique customer', async () => {
+  24 |         await homePage.openRegistration();
+  25 |         await registerPage.register(customer);
+  26 |         expect(await registerPage.isRegistrationSuccessful()).toBeTruthy();
+  27 |     });
+  28 | 
+  29 |     await test.step('2) Log out and authenticate again', async () => {
+  30 |         await homePage.logout();
+  31 |         await homePage.openLogin();
+  32 |         await loginPage.login(customer.email, customer.password);
+  33 |         expect(await accountPage.isAccountPageDisplayed()).toBeTruthy();
+  34 |     });
+  35 | 
+  36 |     await test.step('3) Search for the known product and open details', async () => {
+  37 |         await homePage.searchFor(product.productName);
+  38 |         expect(await productPage.isSearchResultDisplayed()).toBeTruthy();
+  39 |         await productPage.openProductDetails();
+> 40 |         expect(await productPage.isProductDisplayed()).toBeTruthy();
+     |                                                        ^ Error: expect(received).toBeTruthy()
+  41 |     });
+  42 | 
+  43 |     let productPrice = '';
+  44 |     await test.step('4) Add the product to the cart', async () => {
+  45 |         productPrice = await productPage.getPrice();
+  46 |         await productPage.addToCart(Number(product.productQuantity));
+  47 |         await homePage.openCart();
+  48 |     });
+  49 | 
+  50 |     await test.step('5) Validate cart product, quantity, price, and total', async () => {
+  51 |         expect(await cartPage.getProductName()).toContain(product.productName);
+  52 |         expect(await cartPage.getQuantity()).toBe(product.productQuantity);
+  53 |         expect(await cartPage.getProductPrice()).toContain(productPrice.replace(' ', ''));
+  54 |         expect(await cartPage.getCartTotal()).toContain(productPrice.replace(' ', ''));
+  55 |     });
+  56 | 
+  57 |     console.log('Completed end-to-end shopping flow successfully.');
+  58 | });
+```

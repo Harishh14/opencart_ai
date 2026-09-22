@@ -1,0 +1,2 @@
+[   28762ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://tutorialsninja.com/demo/index.php?route=account/login:0
+[   41938ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) @ https://tutorialsninja.com/demo/index.php?route=account/login:0

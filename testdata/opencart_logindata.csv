@@ -1,0 +1,4 @@
+username,password,scenario
+test14@gmail.com,admin,valid
+test14@gmail.com,wrongpassword,invalid_credentials
+invalid_user@example.com,admin,invalid_username

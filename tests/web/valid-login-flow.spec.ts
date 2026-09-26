@@ -38,5 +38,7 @@ test('Valid Login Flow @master @sanity @regression @web @login', async ({
         expect(await accountPage.isAuthenticatedNavigationDisplayed()).toBeTruthy();
     });
 
+    await page.close();
+    
     console.log('Completed valid customer login flow successfully.');
 });

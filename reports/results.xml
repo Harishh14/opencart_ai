@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="19.277697">
-<testsuite name="web/valid-login-flow.spec.ts" timestamp="2026-09-22T17:33:51.884Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.768" errors="0">
-<testcase name="Valid Login Flow @master @sanity @regression @web @login" classname="web/valid-login-flow.spec.ts" time="7.768">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="14.601521999999997">
+<testsuite name="web\valid-login-flow.spec.ts" timestamp="2026-09-26T05:46:48.367Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.884" errors="0">
+<testcase name="Valid Login Flow @master @sanity @regression @web @login" classname="web\valid-login-flow.spec.ts" time="5.884">
 <system-out>
 <![CDATA[Completed valid customer login flow successfully.
 ]]>

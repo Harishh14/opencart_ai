@@ -59,9 +59,14 @@ pipeline {
       }
     }
     
+
     stage('▶️ Run Playwright Tests') {
       steps {
         script {
+
+          // Clean up previous results to avoid stale failure reports
+          powershell 'Remove-Item -Recurse -Force reports, allure-results -ErrorAction SilentlyContinue'
+
           def suite = params.TEST_SUITE
           def browserFlag = "--project=${params.BROWSER}"
           def modeFlag = params.MODE == 'headed' ? '--headed' : ''
